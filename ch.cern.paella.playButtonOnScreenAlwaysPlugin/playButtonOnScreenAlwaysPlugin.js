@@ -1,6 +1,11 @@
-/* Plugin override: PlayButtonOnScreen */
+/*
+Plugin override: PlayButtonOnScreen
+
+Display always the big play button on the player, no matter the
+stream is live or not.
+*/
 paella.addPlugin(function() {
-	class PlayButtonOnScreenAlways extends paella.EventDrivenPlugin {
+	class PlayButtonOnScreenAlwaysPlugin extends paella.EventDrivenPlugin {
 		getName() { return "ch.cern.paella.playButtonOnScreenAlwaysPlugin"; }
 		getIndex() { return 1022; }
 
